@@ -16,7 +16,7 @@ For instance:
 Fork the repository link above, make a local clone, and work on the project locally in the same way you work on projects.
 
 ## Submitting your Project
-If you are working in a group, only one group member needs to submit the project. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
+If you are working in a group, only one group member should make a pull request and everyone needs to submit the URL of that pull request. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
 
 When you are done with your project, make sure the main branch in the forked remote repository in GitHub is updated with the latest version of your project.
 
