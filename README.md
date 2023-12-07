@@ -13,7 +13,7 @@ For instance:
 `https://github.com/ms1-learner/cpp-01-project-ja`
 
 ## Working on the Project
-Fork the repository link above, make a local clone, and work on the project locally in the same way you work on projects.
+Fork the repository link above, make a local clone, and work on the project locally in the same way you work on challenges.
 
 ## Submitting your Project
 If you are working in a group, only one group member should make a pull request and everyone needs to submit the URL of that pull request. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
