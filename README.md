@@ -1,5 +1,5 @@
 # MS1 Project Guide
-A project is a crucial part of the MS1 learning experience that allows you to strengthen your understanding of the content covered in a module by giving you the chance to apply what you've learned to a problem that closely simulates a real-world situation. Some challenges are completed individually, giving you a chance to create a complex program start to finish on your own. Other projects are completed as a group, providing you with a collaborative experience that is similar to working in a real development team.
+A project is a crucial part of the MS1 learning experience that allows you to strengthen your understanding of the content covered in a module by giving you the chance to apply what you've learned to a problem that closely simulates a real-world situation. Some projects are completed individually, giving you a chance to create a complex program start to finish on your own. Other projects are completed as a group, providing you with a collaborative experience that is similar to working in a real development team.
 
 ## Accessing Projects
 At the end of each module, you’ll find an instructions page for that module's project. The instructions page will contain a link to the project repository on GitHub. The repository may be a blank placeholder, or may contain some resources you will need to complete the project.
@@ -16,9 +16,9 @@ For instance:
 Fork the repository link above, make a local clone, and work on the project locally in the same way you work on challenges.
 
 ## Submitting your Project
-If you are working in a group, only one group member needs to submit the project. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide who's GitHub account will host the project and who will submit the project on your group's behalf.
+If you are working in a group, only one group member should make a pull request and everyone needs to submit the URL of that pull request. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
 
-When you are done with your project, make sure the main branch in GitHub is updated with the latest version of your project.
+When you are done with your project, make sure the main branch in the forked remote repository in GitHub is updated with the latest version of your project.
 
 You will need to make a `pull request` in order to submit your project. Don't worry if you have never done this before or don't even know what it is. We will show you exactly how to do this step.
 
