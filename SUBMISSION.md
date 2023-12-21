@@ -2,7 +2,7 @@
 A project is a crucial part of the MS1 learning experience that allows you to strengthen your understanding of the content covered in a module by giving you the chance to apply what you've learned to a problem that closely simulates a real-world situation. Some projects are completed individually, giving you a chance to create a complex program start to finish on your own. Other projects are completed as a group, providing you with a collaborative experience that is similar to working in a real development team.
 
 ## Accessing Projects
-At the end of each module, you’ll find an instructions page for that module's project. The instructions page will contain a link to the project repository on GitHub. The repository may be a blank placeholder, or may contain some resources you will need to complete the project.
+At the end of each module, you’ll find an instructions page for that module's project. The instructions page will contain a link to the project repository on GitHub. The repository may be a blank placeholder, or it may contain some resources you will need to complete the project.
 
 The general link structure will be something like the following:
 
@@ -10,33 +10,66 @@ The general link structure will be something like the following:
 
 For instance:
 
-`https://github.com/ms1-learner/cpp-01-project-ja`
+`https://github.com/ms1-learner/cpp-01-project-en`
+
+## Setting Up the Project Repository
+First clone the project repository, and navigate into it:
+
+```bash
+cd cpp-01-project-en
+```
+
+Then run the following git command:
+
+```bash
+git remote rename origin ms1
+```
+
+We will come back to this repository, so don't close the terminal just yet.
+
+Next we need to make a new, empty repository on your enterprise GitHub account.
+
+Navigate to your **repositories** page from your profile icon on the top right:
+
+<img width="1840" alt="Screenshot 2023-12-21 at 12 55 54" src="https://github.com/ms1-learner/cpp-01-en/assets/5623716/15a2fc85-ac92-41a6-9179-cbc9c55818b4">
+
+Select the green button labeled `New`.
+
+On the "Create a new repository" page, select yourself as the owner, and give the repository the same name as the repository you cloned earlier. In this case, `cpp-01-project-en`. Leave all the other settings in their default state.
+
+<img width="1840" alt="Screenshot 2023-12-21 at 15 21 10" src="https://github.com/ms1-learner/cpp-01-project-en/assets/5623716/df9e1cc7-9d32-4206-b5be-c980314b9ae7">
+
+On the next screen, select HTTPS, then copy the git commands from the bottom box.
+
+<img width="1840" alt="Screenshot 2023-12-21 at 15 22 11" src="https://github.com/ms1-learner/cpp-01-project-en/assets/5623716/c3bdf720-901d-40a1-975c-9a3bf2d57881">
+
+Paste these commands in the same terminal from before, from inside the previously cloned repository.
+
+```bash
+git remote add origin https://github.tmc-stargate.com/alexander-bolinsky/cpp-01-project-en.git
+git branch -M main
+git push -u origin main
+```
+
+Once these commands finish running, if you return to your newly created repository on GitHub, it should now be populated with the content from the original cloned repository.
 
 ## Working on the Project
-Fork the repository link above, make a local clone, and work on the project locally in the same way you work on challenges.
+Proceed to work on the project locally in the same way you work on challenges.
+
+### Pulling Changes
+If some content was changed on the original repository and an instructor informs you to "pull" the latest changes, you can do so by running the following git command from inside your repository:
+
+```bash
+git pull ms1 main
+```
 
 ## Submitting your Project
-If you are working in a group, only one group member should make a pull request and everyone needs to submit the URL of that pull request. Make sure each group member is added as a collaborator to your group's project repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
+If you are working in a group, everyone needs to submit the same URL of the project repository. Make sure each group member is added as a collaborator to this repository. Coordinate with your group to decide whose GitHub account will host the project and who will submit the project on your group's behalf.
 
-When you are done with your project, make sure the main branch in the forked remote repository in GitHub is updated with the latest version of your project.
+When you are done with your project, make sure the `main` branch is updated with the latest version of your project.
 
-You will need to make a `pull request` in order to submit your project. Don't worry if you have never done this before or don't even know what it is. We will show you exactly how to do this step.
+Copy the URL from your pull request in GitHub, navigate to the project page on MS1, paste the link, and click `Submit`.
 
-Go to your project repository and click the `Pull requests` tab. Click the `New pull request` button.
+<img width="841" alt="Screenshot 2023-12-21 at 15 56 27" src="https://github.com/ms1-learner/cpp-01-project-en/assets/5623716/51f5729a-e4cc-4911-9f89-07d15966f244">
 
-![Project Submission 1](https://github.com/ms1-learner/assets/blob/main/project-submission-1.png)
-
-On the next screen, check that the `base` repository is the ms1-learner repository and the `head` repository is your repository. Make sure the `main` branch is selected for both repositories. Click `Create repository`.
-
-![Project Submission 2](https://github.com/ms1-learner/assets/blob/main/project-submission-2.png)
-
-Add a short description to your pull request if you like and click `Create repository` to finalize your pull request.
-
-![Project Submission 3](https://github.com/ms1-learner/assets/blob/main/project-submission-3.png)
-
-You are now done creating the pull request. The next screen will show the details of your pull request. The last step is to copy the URL into MS1. Copy the URL from your pull request in GitHub, navigate to the project page on MS1, paste the link, and click `Submit`.
-
-![Project Submission 4](https://github.com/ms1-learner/assets/blob/main/project-submission-4.png)
-![Project Submission 5](https://github.com/ms1-learner/assets/blob/main/project-submission-5.png)
-
-That's it, all finished! You will be notified on MS1 when your project has been graded. If you do not pass the project, check the pull request for comments from your instructor to find out what you need to change in order to pass. You can access the pull request page from your project GitHub repository. Your instructor will close the pull request after you have passed the project.
+That's it, all finished! You will be notified on MS1 when your project has been graded. If you do not pass the project, you will receive comments from your instructor detailing what you need to change in order to pass.
